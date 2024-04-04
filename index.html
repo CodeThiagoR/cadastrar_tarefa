@@ -15,27 +15,30 @@
 
 </head>
 <body>
+    <div class="container"></div>
     <header>
         <h1>MY DAILY TASKS</h1>
         <h2>Insert or Delete here your tasks!</h2>
         
     </header>
-    <div class="container">
-        <form>
-            <ul>
-                <input type="text" id="" required placeholder="Insert here ...">
-            </ul>
-            <ul>
+        <form id="task-form">
+                <input type="text" id="taskName" required placeholder="Insert here ...">
                 <button type="submit">INSERT</button>
-            </ul>
-            <ul>
                 <button type="reset">CLEAN</button>
-            </ul>
         </form>
-    </div>
+    <table cellspacing="0">
+        <tbody>
+            <tr>
+                <td>
+                    ---
+                </td>
+            </tr>
+        </tbody>
+    </table>
     <footer>
         Exercício jQuery de Engenheiro Frontend - 2024
     </footer>
+    </div>
     <script src="main.js"></script>
 </body>
 </html>

@@ -20,6 +20,11 @@ h2 {
     font-size: 2em;
 }
 
+h3 {
+    font-family: "Patrick Hand SC", cursive;
+    font-size: 2em;
+}
+
 header {
     font-weight: normal;
     margin-top: 150px;
@@ -30,15 +35,11 @@ body {
     color: #fff;
 }
 
-.container {
-    max-width: 520px;
-    width: 100%;
-    margin: 0 auto;
-}
-
 form {
+    max-width: 500px;
+    width: 100%;
+    margin: 20px auto;
     display: flex;
-    margin-bottom: 50px;   
 }
 
 form button {
@@ -61,6 +62,26 @@ form input {
     font-size: 1.2em;
     border-radius: 10px;
     padding: 7.5px;
+}
+
+table {
+    background-color: rgb(88, 88, 88);
+    max-width: 520px;
+    width: 100%;
+    margin: 20px auto;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.589);
+}
+
+table td {
+    border-bottom: 2px solid turquoise;
+    cursor: pointer;
+}
+
+tbody {
+    font-family: "Patrick Hand SC", cursive;
+    font-size: 2em;
+    text-align: center;
+    padding: 8px;
 }
 
 footer {
