@@ -1,21 +1,11 @@
 const form = document.getElementById('task-form');
 
-let lines = '';
+    function addLi() {
+        let task = document.getElementById('task').value,
+            listNode = document.getElementById('list'),   
+            liNode = document.createElement("LI"),
+            txtNode = document.createTextNode(task);
 
-form.addEventListener('submit', function(e) {
-    e.preventDefault();
-
-    const inputTask = document.getElementById('taskName');
-
-    let line = '<tr>';
-    line += `<td>${inputTask.value}</td>`;
-    line += '</tr>';
-
-    lines += line;
-
-    const bodyTab = document.querySelector('tbody');
-    bodyTab.innerHTML = lines;
-
-    inputTask.value = '';
-
-});
+            liNode.appendChild(txtNode);
+            listNode.appendChild(linode);
+    }

@@ -36,7 +36,7 @@ body {
 }
 
 form {
-    max-width: 500px;
+    max-width: 320px;
     width: 100%;
     margin: 20px auto;
     display: flex;
@@ -64,24 +64,36 @@ form input {
     padding: 7.5px;
 }
 
-table {
-    background-color: rgb(88, 88, 88);
-    max-width: 520px;
-    width: 100%;
-    margin: 20px auto;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.589);
-}
-
-table td {
-    border-bottom: 2px solid turquoise;
-    cursor: pointer;
-}
-
-tbody {
+ul {
     font-family: "Patrick Hand SC", cursive;
     font-size: 2em;
     text-align: center;
     padding: 8px;
+}
+
+ul ol {
+    font-size: 1.3em;
+    font-family: "Patrick Hand SC", cursive;
+    font-weight: bold;
+    text-align: center;
+    max-width: 130px;
+    margin: 20px auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+ul img {
+    height: 25px;
+}
+
+.linet {
+    text-decoration: line-through;
+}
+
+.underline td:hover {
+    text-decoration: underline;
 }
 
 footer {

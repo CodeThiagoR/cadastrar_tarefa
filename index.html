@@ -21,24 +21,28 @@
         <h2>Insert or Delete here your tasks!</h2>
         
     </header>
-        <form id="task-form">
+        <form id="task">
                 <input type="text" id="taskName" required placeholder="Insert here ...">
-                <button type="submit">INSERT</button>
-                <button type="reset">CLEAN</button>
+                <button onclick="addLi()">+</button>
         </form>
-    <table cellspacing="0">
-        <tbody>
-            <tr>
-                <td>
-                    ---
-                </td>
-            </tr>
-        </tbody>
-    </table>
+        <ul id="list">
+            <li>teste</li>
+        </ul>
     <footer>
-        Exercício jQuery de Engenheiro Frontend - 2024
+        jQuery de Engenheiro Frontend - 2024
     </footer>
     </div>
-    <script src="main.js"></script>
+    <script>
+            function addLi() 
+            {
+            let taskName = document.getElementById('taskName').value;
+                listNode = document.getElementById('list');  
+                liNode = document.createElement("LI");
+                txtNode = document.createTextNode(taskName);
+
+                liNode.appendChild(txtNode);
+                listNode.appendChild(linode);
+            }
+    </script>
 </body>
 </html>
