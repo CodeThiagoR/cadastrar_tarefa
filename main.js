@@ -1,11 +1,14 @@
-const form = document.getElementById('task-form');
+$(document).ready(function() {
+    $('form').on('submit', function(event){
+        event.preventDefault();
+        let task = $('input').val()
+        let list = $(".lista")
+        let go = `<li>${task}</li>`
+        $(go).appendTo(list)
+    });
 
-    function addLi() {
-        let task = document.getElementById('task').value,
-            listNode = document.getElementById('list'),   
-            liNode = document.createElement("LI"),
-            txtNode = document.createTextNode(task);
-
-            liNode.appendChild(txtNode);
-            listNode.appendChild(linode);
-    }
+    $('ul').on('click','li', function() {
+        console.log('Worked')
+        $(this).addClass('done');
+    });
+})

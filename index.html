@@ -23,26 +23,15 @@
     </header>
         <form id="task">
                 <input type="text" id="taskName" required placeholder="Insert here ...">
-                <button onclick="addLi()">+</button>
+                <button onclick="addLi" id="btn" type="submit">+</button>
         </form>
-        <ul id="list">
+        <ul class="list">
             <li>teste</li>
         </ul>
     <footer>
         jQuery de Engenheiro Frontend - 2024
     </footer>
     </div>
-    <script>
-            function addLi() 
-            {
-            let taskName = document.getElementById('taskName').value;
-                listNode = document.getElementById('list');  
-                liNode = document.createElement("LI");
-                txtNode = document.createTextNode(taskName);
-
-                liNode.appendChild(txtNode);
-                listNode.appendChild(linode);
-            }
-    </script>
+    <script src="main.js"></script>
 </body>
 </html>

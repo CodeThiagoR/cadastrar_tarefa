@@ -88,13 +88,10 @@ ul img {
     height: 25px;
 }
 
-.linet {
+.done {
     text-decoration: line-through;
 }
 
-.underline td:hover {
-    text-decoration: underline;
-}
 
 footer {
     background-color: turquoise;
