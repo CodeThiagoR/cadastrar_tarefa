@@ -12,7 +12,7 @@ $(document).ready(function(){
         (ul).toggle('done')
     })
 
-    $('ul').on('click', 'li', function(){
+    $('ul').on('click','li', function() {
         console.log('worked')
         $(this).addClass('concluded');
     });
