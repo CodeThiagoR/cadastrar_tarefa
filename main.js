@@ -1,14 +1,19 @@
-$(document).ready(function() {
-    $('form').on('submit', function(event){
-        event.preventDefault();
-        let task = $('input').val()
-        let list = $(".lista")
-        let go = `<li>${task}</li>`
-        $(go).appendTo(list)
-    });
+$(document).ready(function(){
+    $('form').on('submit', function(e){
+        e.preventDefault();
 
-    $('ul').on('click','li', function() {
-        console.log('Worked')
-        $(this).addClass('done');
+        let task = $('input').val()
+        let list = $('list')
+        let item = `<li>${task}</li>`
+        $(item).appendTo(list)
+    })
+
+    $('button').click(function(){
+        (ul).toggle('done')
+    })
+
+    $('ul').on('click', 'li', function(){
+        console.log('worked')
+        $(this).addClass('concluded');
     });
 })
