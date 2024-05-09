@@ -1,7 +1,6 @@
 $(document).ready(function(){
     $('form').on('submit', function(event){
         event.preventDefault();
-
         let task = $('input').val()
         let list = $(".list")
         let go = `<li>${task}</li>`

@@ -69,6 +69,7 @@ ul {
     font-size: 2em;
     text-align: center;
     padding: 8px;
+    cursor: pointer;
 }
 
 ul ol {
@@ -90,6 +91,7 @@ ul img {
 
 .done {
     text-decoration: line-through;
+    cursor: pointer;
 }
 
 
