@@ -1,19 +1,15 @@
 $(document).ready(function(){
-    $('form').on('submit', function(e){
-        e.preventDefault();
+    $('form').on('submit', function(event){
+        event.preventDefault();
 
         let task = $('input').val()
-        let list = $('list')
-        let item = `<li>${task}</li>`
-        $(item).appendTo(list)
-    })
-
-    $('button').click(function(){
-        (ul).toggle('done')
-    })
+        let list = $(".list")
+        let go = `<li>${task}</li>`
+        $(go).appendTo(list)
+    });
 
     $('ul').on('click','li', function() {
         console.log('worked')
-        $(this).addClass('concluded');
+        $(this).addClass('done');
     });
 })
